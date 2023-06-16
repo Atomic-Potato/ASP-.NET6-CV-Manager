@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/GitHub Repositories/- ASP.NET Core Repositories/CV Manager/ASP-.NET-CV-Manager/CV Manager/Pages/Browse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJvd3NlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GitHub Repositories/- ASP.NET Core Repositories/CV Manager/ASP-.NET-CV-Manager/CV Manager/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -24,8 +28,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHub Repositories/- ASP.NET Core Repositories/CV Manager/ASP-.NET-CV-Manager/CV Manager/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[C:/GitHub Repositories/- ASP.NET Core Repositories/CV Manager/ASP-.NET-CV-Manager/CV Manager/Pages/Send.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/GitHub Repositories/- ASP.NET Core Repositories/CV Manager/ASP-.NET-CV-Manager/CV Manager/Pages/Shared/_ValidationScriptsPartial.cshtml]
