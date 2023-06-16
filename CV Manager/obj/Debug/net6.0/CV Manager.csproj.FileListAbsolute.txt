@@ -1,0 +1,31 @@
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\appsettings.Development.json
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\appsettings.json
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\CV Manager.staticwebassets.runtime.json
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\CV Manager.exe
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\CV Manager.deps.json
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\CV Manager.runtimeconfig.json
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\CV Manager.dll
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\CV Manager.pdb
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.csproj.AssemblyReference.cache
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.AssemblyInfoInputs.cache
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.AssemblyInfo.cs
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.csproj.CoreCompileInputs.cache
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.MvcApplicationPartsAssemblyInfo.cache
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.RazorAssemblyInfo.cache
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.RazorAssemblyInfo.cs
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\staticwebassets\msbuild.CV Manager.Microsoft.AspNetCore.StaticWebAssets.props
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\staticwebassets\msbuild.build.CV Manager.props
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CV Manager.props
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CV Manager.props
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\staticwebassets.pack.json
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\staticwebassets.build.json
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\staticwebassets.development.json
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\scopedcss\bundle\CV Manager.styles.css
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\scopedcss\projectbundle\CV Manager.bundle.scp.css
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.dll
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\refint\CV Manager.dll
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.pdb
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.genruntimeconfig.cache
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\ref\CV Manager.dll
