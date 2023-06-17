@@ -66,7 +66,7 @@ namespace CV_Manager.Models {
         /// </summary>
         /// <returns>CV containing all the appropriate data from the model</returns>
         public CV ToCV() {
-            SaveImage();
+            string imagePath SaveImage();
 
             return new CV {
                 firstName = this.firstName,
@@ -82,7 +82,7 @@ namespace CV_Manager.Models {
                 beef = selectedSkills.Contains("beef"),
 
                 email = this.email,
-                photo = "wwwroot/CVImages/" + this.photo.FileName
+                photo = imagePath
             };
         }
 
@@ -90,7 +90,8 @@ namespace CV_Manager.Models {
         /// Saves the submitted image to the following path:
         /// wwwroot/CVImages
         /// </summary>
-        void SaveImage() {
+        /// <returns>The new image path</returns>
+        string SaveImage() {
             string folderPath = "wwwroot/CVImages";
             string fileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
             string filePath = Path.Combine(folderPath, fileName);
@@ -98,6 +99,8 @@ namespace CV_Manager.Models {
             using (var fileStream = new FileStream(filePath, FileMode.Create)) {
                 photo.CopyTo(fileStream);
             }
+
+            return filePath;
         }
     }
 }
