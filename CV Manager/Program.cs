@@ -1,8 +1,12 @@
+using CV_Manager;
+
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+services.AddRazorPages();
 RegisterDbContext();
+services.AddScoped<CVService>();
 
 var app = builder.Build();
 

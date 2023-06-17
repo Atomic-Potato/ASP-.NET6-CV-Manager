@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CV_Manager.Data {
-    public class CvLists {
+    public class CVLists {
 
         public static IEnumerable<SelectListItem> nationalities = new List<SelectListItem>() {
             new SelectListItem{Value = "LB", Text = "Lebanese"},

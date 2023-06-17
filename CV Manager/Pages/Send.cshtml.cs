@@ -8,15 +8,27 @@ namespace CV_Manager.Pages
     public class SendModel : PageModel
     {
         [BindProperty]
-        public BaseCV cv {get; set;}
+        public CVModel cv {get; set;}
+
+        readonly CVService service;
         
-        public void OnGet(){
-            cv = new BaseCV();
+        public SendModel(CVService service) {
+            this.service = service;
         }
 
-        // TODO: Convert to async Task once database stuff is implemented
-        public IActionResult OnPost() {
-            return RedirectToPage("Summary", new { id = "Insert_ID" });
+        public void OnGet(){
+            cv = new CVModel();
+        }
+
+        public async Task<IActionResult> OnPost() {
+            try {
+                int cvId = await service.CreateCV(cv);
+                return RedirectToPage("Summary", new { id = cvId});
+            }
+            catch (Exception ex) {
+                Console.WriteLine("CV could not be added to the databse");
+                throw;
+            }
         }
     }
 }

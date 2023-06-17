@@ -4,7 +4,7 @@
 
 }
 
-<form asp-page="Summary" method="post">
+<form asp-page="Summary" method="post" enctype="multipart/form-data">
     <label asp-for="cv.firstName"></label><br>
     <input asp-for="cv.firstName"><br><br>
 
@@ -15,11 +15,11 @@
     <input asp-for="cv.birthDay"><br><br>
     
     <label asp-for="cv.nationality"></label><br>
-    <select asp-for="cv.nationality" asp-items="CvLists.nationalities"></select><br><br>
+    <select asp-for="cv.nationality" asp-items="CVLists.nationalities"></select><br><br>
     
     <label asp-for="cv.gender"></label><br>
     @{
-        foreach(var gender in CvLists.genders) {
+        foreach(var gender in CVLists.genders) {
             <input type="radio" asp-for="cv.gender" value="@gender.Value"/> @gender.Text<br>
         }
     }
@@ -27,7 +27,7 @@
 
     <label asp-for="cv.selectedSkills"></label><br>
     @{
-        foreach (var skill in CvLists.skills) {
+        foreach (var skill in CVLists.skills) {
             <input type="checkbox" name="selectedSkills" value="@skill.Value" /> @skill.Text<br>
         }
     }

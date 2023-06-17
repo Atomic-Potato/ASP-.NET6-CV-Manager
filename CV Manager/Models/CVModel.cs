@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
 namespace CV_Manager.Models {
-    public class BaseCV {
+    public class CVModel {
         [Required]
         [Display(Name = "First Name")]
         [StringLength(100, ErrorMessage = "Maximum length is 100")]
@@ -29,7 +29,7 @@ namespace CV_Manager.Models {
         public string gender { get; set; }
 
         [Display(Name = "Skills")]
-        public List<string> selectedSkills { get; set; }
+        public List<string> selectedSkills { get; set; } = new List<string>();
 
         [Required]
         [EmailAddress]
@@ -57,9 +57,47 @@ namespace CV_Manager.Models {
         [Display(Name = "Sum of X & Y")]
         public int sum { get; set; }
 
+        [Required]
         [Display(Name = "Photus")]
         public IFormFile photo { get; set; }
 
-        public List<bool> tests { get; set; }
+        /// <summary>
+        /// Coverts the model into a CV record
+        /// </summary>
+        /// <returns>CV containing all the appropriate data from the model</returns>
+        public CV ToCV() {
+            SaveImage();
+
+            return new CV {
+                firstName = this.firstName,
+                lastName = this.lastName,
+                birthDay = this.birthDay,
+                nationality = this.nationality,
+                gender = this.gender,
+
+
+                java = selectedSkills.Contains("java"),
+                cs = selectedSkills.Contains("cs"),
+                python = selectedSkills.Contains("py"),
+                beef = selectedSkills.Contains("beef"),
+
+                email = this.email,
+                photo = "wwwroot/CVImages/" + this.photo.FileName
+            };
+        }
+
+        /// <summary>
+        /// Saves the submitted image to the following path:
+        /// wwwroot/CVImages
+        /// </summary>
+        void SaveImage() {
+            string folderPath = "wwwroot/CVImages";
+            string fileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
+            string filePath = Path.Combine(folderPath, fileName);
+
+            using (var fileStream = new FileStream(filePath, FileMode.Create)) {
+                photo.CopyTo(fileStream);
+            }
+        }
     }
 }
