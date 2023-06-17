@@ -2,6 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+RegisterDbContext();
 
 var app = builder.Build();
 
@@ -26,3 +27,11 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+
+#region METHODS
+void RegisterDbContext() {
+    string connSrting = builder.Configuration.GetConnectionString("DefaultConnection");
+    builder.Services.AddDbContext<AppDbContext>(options => options.UseMySQL(connSrting));
+}
+#endregion

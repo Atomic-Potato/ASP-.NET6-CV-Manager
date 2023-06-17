@@ -1,25 +1,29 @@
-﻿namespace CV_Manager.Data {
+﻿using System.Net.Mail;
+using System.Security.Policy;
+
+namespace CV_Manager.Data {
     public class CV {
-        public int id;
-        public string firstName;
-        public string lastName;
-        public DateTime birthDay;
+        [Key]
+        public int cvId { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public DateTime birthDay { get; set; }
 
         // Dropdown List
-        public string nationality;
+        public string nationality { get; set; }
            
         // Radio Button
-        public string gender;
+        public string gender { get; set; }
 
         #region PROGRAMMING SKILLS [CheckBoxes]
-        public bool java;
-        public bool cs;
-        public bool python;
+        public bool java { get; set; }
+        public bool cs { get; set; }
+        public bool python { get; set; }
         #endregion
 
-        public EmailAddressAttribute emailAddress;
-        public EmailAddressAttribute confirmEmailAddress;
+        [EmailAddress]
+        public string email { get; set; }
 
-        public File photo;
+        public string photo { get; set; }
     }
 }
