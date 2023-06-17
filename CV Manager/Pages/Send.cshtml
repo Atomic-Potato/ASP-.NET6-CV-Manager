@@ -1,61 +1,57 @@
 ﻿@page
 @model CV_Manager.Pages.SendModel
 @{
-    <form>
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required><br><br>
 
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required><br><br>
-
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required><br><br>
-
-        <label for="nationality">Nationality:</label>
-        <select id="nationality" name="nationality" required>
-            <option value="">Select Nationality</option>
-            <option value="Lebanon">Lebanon</option>
-            <option value="Japan">Japan</option>
-            <option value="France">France</option>
-        </select><br><br>
-
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female" required>
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="other" required>
-        <label for="other">Other</label><br><br>
-
-        <label>Programming Skills:</label><br>
-        <input type="checkbox" id="java" name="skills" value="Java">
-        <label for="java">Java</label><br>
-        <input type="checkbox" id="csharp" name="skills" value="C#">
-        <label for="csharp">C#</label><br>
-        <input type="checkbox" id="python" name="skills" value="Python">
-        <label for="python">Python</label><br>
-        <input type="checkbox" id="r" name="skills" value="R">
-        <label for="r">R</label><br>
-        <br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="confirm-email">Confirm Email:</label>
-        <input type="email" id="confirm-email" name="confirm-email" required><br><br>
-
-        <label for="x">X (1-20):</label>
-        <input type="number" id="x" name="x" min="1" max="20" required><br><br>
-
-        <label for="y">Y (20-50):</label>
-        <input type="number" id="y" name="y" min="20" max="50" required><br><br>
-
-        <label for="sum">Sum:</label>
-        <input type="number" id="sum" name="sum" required><br><br>
-
-        <label for="photo">Photo:</label>
-        <input type="file" id="photo" name="photo" required><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
 }
+
+<form asp-asp-page="Summary" method="post">
+    <label asp-for="cv.firstName"></label><br>
+    <input asp-for="cv.firstName"><br><br>
+
+    <label asp-for="cv.lastName"></label><br>
+    <input asp-for="cv.lastName"><br><br>
+
+    <label asp-for="cv.birthDay"></label><br>
+    <input asp-for="cv.birthDay"><br><br>
+    
+    <label asp-for="cv.nationality"></label><br>
+    <select asp-for="cv.nationality" asp-items="Model.nationalities"></select><br><br>
+    
+    <label asp-for="cv.gender"></label><br>
+    @{
+        foreach(var gender in Model.genders) {
+            <input type="radio" asp-for="cv.gender" value="@gender.Value"/> @gender.Text<br>
+        }
+    }
+    <br><br>
+
+    <label asp-for="cv.selectedSkills"></label><br>
+    @{
+        foreach (var skill in Model.skills) {
+            <input type="checkbox" name="selectedSkills" value="@skill.Value" /> @skill.Text<br>
+        }
+    }
+    <br><br>
+
+
+    <label asp-for="cv.email"></label><br>
+    <input asp-for="cv.email" /><br><br>
+
+    <label asp-for="cv.emailConfirm"></label><br>
+    <input asp-for="cv.email" /><br><br> <br><br>
+
+    <label asp-for="cv.x"></label><br>
+    <input asp-for="cv.x" /><br><br>
+
+    <label asp-for="cv.y"></label><br>
+    <input asp-for="cv.y" /><br><br>
+
+    <label asp-for="cv.sum"></label><br>
+    <input asp-for="cv.sum" /><br><br> <br><br>
+
+    <label asp-for="cv.photo"></label><br>
+    <input asp-for="cv.photo" /><br><br> <br><br>
+
+
+    <input type="submit" value="Submit">
+</form>

@@ -14,6 +14,7 @@ namespace CV_Manager.Data {
         public bool java { get; set; }
         public bool cs { get; set; }
         public bool python { get; set; }
+
         public string email { get; set; }
         public string photo { get; set; }
     }
