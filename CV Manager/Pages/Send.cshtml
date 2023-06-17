@@ -15,11 +15,11 @@
     <input asp-for="cv.birthDay"><br><br>
     
     <label asp-for="cv.nationality"></label><br>
-    <select asp-for="cv.nationality" asp-items="Model.nationalities"></select><br><br>
+    <select asp-for="cv.nationality" asp-items="CvLists.nationalities"></select><br><br>
     
     <label asp-for="cv.gender"></label><br>
     @{
-        foreach(var gender in Model.genders) {
+        foreach(var gender in CvLists.genders) {
             <input type="radio" asp-for="cv.gender" value="@gender.Value"/> @gender.Text<br>
         }
     }
@@ -27,7 +27,7 @@
 
     <label asp-for="cv.selectedSkills"></label><br>
     @{
-        foreach (var skill in Model.skills) {
+        foreach (var skill in CvLists.skills) {
             <input type="checkbox" name="selectedSkills" value="@skill.Value" /> @skill.Text<br>
         }
     }
