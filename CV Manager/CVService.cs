@@ -16,5 +16,25 @@
             await db.SaveChangesAsync();
             return cv.cvId;
         }
+
+        public async Task<CV> GetCV(int id) {
+            return await db.CVs
+                .Where(r => r.cvId == id)
+                .Select(r => new CV {
+                    cvId = r.cvId,
+                    firstName = r.firstName,
+                    lastName = r.lastName,
+                    birthDay = r.birthDay,
+                    nationality = r.nationality,
+                    gender = r.gender,
+                    java = r.java,
+                    cs = r.cs,
+                    python = r.python,
+                    beef = r.beef,
+                    email = r.email,
+                    photo = r.photo
+                })
+                .SingleOrDefaultAsync();
+        }
     }
 }

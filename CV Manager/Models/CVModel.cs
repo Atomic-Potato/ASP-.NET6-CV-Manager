@@ -93,9 +93,10 @@ namespace CV_Manager.Models {
         string SaveImage() {
             string folderPath = "wwwroot/CVImages";
             string fileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
-            string filePath = Path.Combine(folderPath, fileName);
+            string savePath = folderPath + "/" + fileName;
+            string filePath = "~/CVImages/" + fileName;
 
-            using (var fileStream = new FileStream(filePath, FileMode.Create)) {
+            using (var fileStream = new FileStream(savePath, FileMode.Create)) {
                 photo.CopyTo(fileStream);
             }
 

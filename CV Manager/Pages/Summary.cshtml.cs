@@ -1,12 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Runtime.CompilerServices;
 
 namespace CV_Manager.Pages
 {
     public class SummaryModel : PageModel
     {
-        public void OnGet()
-        {
+        [BindProperty]
+        public CV cv { get; set; }
+
+        CVService service;
+
+        public SummaryModel(CVService service) { 
+            this.service = service;
+        }
+
+        public async Task OnGet(int id){
+            cv = await service.GetCV(id);
         }
     }
 }
