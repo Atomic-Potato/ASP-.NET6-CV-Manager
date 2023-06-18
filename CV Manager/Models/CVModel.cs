@@ -28,8 +28,16 @@ namespace CV_Manager.Models {
         [Display(Name = "Gender")]
         public string gender { get; set; }
 
-        [Display(Name = "Skills")]
-        public IEnumerable<CheckModel> selectedSkills { get; set; } = new List<CheckModel>();
+        #region SKILLS
+        [Display(Name = "Java")]
+        public bool java { get; set; }
+        [Display(Name = "C#")]
+        public bool cs { get; set; }
+        [Display(Name = "Python")]
+        public bool python { get; set; }
+        [Display(Name = "Beef")]
+        public bool beef { get; set; }
+        #endregion
 
         [Required]
         [EmailAddress]
@@ -73,43 +81,14 @@ namespace CV_Manager.Models {
                 nationality = this.nationality,
                 gender = this.gender,
 
-
-                java = CheckForSkill("Java"),
-                cs = CheckForSkill("C#"),
-                python = CheckForSkill("Python"),
-                beef = CheckForSkill("Beef"),
+                java = this.java,
+                cs = this.cs,
+                python = this.python,
+                beef = this.beef,
 
                 email = this.email,
                 photo = imagePath
             };
-
-            /// <summary>
-            /// Checks wether the skill was selected
-            /// </summary>
-            bool CheckForSkill(string key) {
-                string filePath = "file.txt";
-                using (StreamWriter writer = File.AppendText(filePath)) {
-                    writer.WriteLine(selectedSkills.Count());
-
-                    foreach (CheckModel skill in selectedSkills) {
-                    if (skill.text == key) {
-                        return skill.value;
-                    }
-                }
-
-
-                // Create or append to the file
-                    // Write your message
-                    writer.WriteLine(key + "not found");
-                    // You can write multiple lines by calling writer.WriteLine() multiple times
-
-                    // Flush the buffer to ensure the content is written immediately
-                    writer.Flush();
-                }
-
-                return false;
-
-            }
         }
 
         /// <summary>
