@@ -37,6 +37,25 @@
                 .SingleOrDefaultAsync();
         }
 
+        public async Task<ICollection<CV>> LoadAllCVs() {
+            return await db.CVs
+                .Select(r => new CV {
+                    cvId = r.cvId,
+                    firstName = r.firstName,
+                    lastName = r.lastName,
+                    birthDay = r.birthDay,
+                    nationality = r.nationality,
+                    gender = r.gender,
+                    java = r.java,
+                    cs = r.cs,
+                    python = r.python,
+                    beef = r.beef,
+                    email = r.email,
+                    photo = r.photo
+                })
+                .ToListAsync();
+        }
+
         public int CalculateGrade(CV cv) {
             if (cv == null)
                 return 0;
