@@ -1,7 +1,7 @@
 ﻿@page
 @model CV_Manager.Pages.SendModel
 @{
-
+    CVModel cv = Model.cv;
 }
 
 <form asp-page="Summary" method="post" enctype="multipart/form-data">
@@ -37,8 +37,13 @@
 
     <label asp-for="cv.selectedSkills"></label><br>
     @{
-        foreach (var skill in CVLists.skills) {
-            <input type="checkbox" name="selectedSkills" value="@skill.Value" /> @skill.Text<br>
+        foreach (var skill in cv.selectedSkills) {
+            if (!skill.value) {
+                <p>false</p>
+            }
+            <input type="checkbox" name="@skill.value" value="@skill.value"> @skill.text
+            <input type="hidden" asp-for="@cv.selectedSkills">
+            <br>
         }
     }
     <br>

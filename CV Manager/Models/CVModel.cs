@@ -29,14 +29,13 @@ namespace CV_Manager.Models {
         public string gender { get; set; }
 
         [Display(Name = "Skills")]
-        public List<string> selectedSkills { get; set; } = new List<string>();
+        public IEnumerable<CheckModel> selectedSkills { get; set; } = new List<CheckModel>();
 
         [Required]
         [EmailAddress]
         [Display(Name = "Email Adddress")]
         public string email { get; set; }
 
-        // [Required (ErrorMessage = "Please re-type the email address")]
         [EmailAddress]
         [Display(Name = "Re-type the email address")]
         [Compare("email", ErrorMessage = "Emails do not match!")]
@@ -75,14 +74,42 @@ namespace CV_Manager.Models {
                 gender = this.gender,
 
 
-                java = selectedSkills.Contains("java"),
-                cs = selectedSkills.Contains("cs"),
-                python = selectedSkills.Contains("py"),
-                beef = selectedSkills.Contains("beef"),
+                java = CheckForSkill("Java"),
+                cs = CheckForSkill("C#"),
+                python = CheckForSkill("Python"),
+                beef = CheckForSkill("Beef"),
 
                 email = this.email,
                 photo = imagePath
             };
+
+            /// <summary>
+            /// Checks wether the skill was selected
+            /// </summary>
+            bool CheckForSkill(string key) {
+                string filePath = "file.txt";
+                using (StreamWriter writer = File.AppendText(filePath)) {
+                    writer.WriteLine(selectedSkills.Count());
+
+                    foreach (CheckModel skill in selectedSkills) {
+                    if (skill.text == key) {
+                        return skill.value;
+                    }
+                }
+
+
+                // Create or append to the file
+                    // Write your message
+                    writer.WriteLine(key + "not found");
+                    // You can write multiple lines by calling writer.WriteLine() multiple times
+
+                    // Flush the buffer to ensure the content is written immediately
+                    writer.Flush();
+                }
+
+                return false;
+
+            }
         }
 
         /// <summary>

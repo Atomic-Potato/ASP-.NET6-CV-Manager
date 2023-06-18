@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.SignalR;
 
 namespace CV_Manager.Data {
     public class CVLists {
@@ -17,11 +18,14 @@ namespace CV_Manager.Data {
             new SelectListItem{Value = "unkown gender", Text = "Other"}
         };
 
-        public static IEnumerable<SelectListItem> skills = new List<SelectListItem>() {
-            new SelectListItem{Value = "cs", Text = "C#"},
-            new SelectListItem{Value = "java", Text = "Java"},
-            new SelectListItem{Value = "py", Text = "Python"},
-            new SelectListItem{Value = "beef", Text = "Beef"}
-        };
+
+        public static IEnumerable<CheckModel> GetSkills() {
+            return new List<CheckModel>() {
+                new CheckModel(false, "C#"),
+                new CheckModel(false, "Java"),
+                new CheckModel(false, "Python"),
+                new CheckModel(false, "Beef"),
+            };
+        }
     }
 }

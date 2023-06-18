@@ -18,6 +18,7 @@ namespace CV_Manager.Pages
 
         public void OnGet(){
             cv = new CVModel();
+            cv.selectedSkills = CVLists.GetSkills();
         }
 
         public async Task<IActionResult> OnPost() {
