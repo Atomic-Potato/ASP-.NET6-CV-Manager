@@ -71,6 +71,7 @@
             if (cv == null)
                 throw new Exception("CV could not be found");
 
+            DeleteImage(cv.photo);
             UpdateInfo();
             await db.SaveChangesAsync();
             
@@ -87,6 +88,13 @@
                 cv.email = updated.email;
                 cv.photo = updated.photo;
             }
+        }
+
+        void DeleteImage(string path) {
+            if (System.IO.File.Exists(path))
+                System.IO.File.Delete(path);
+            else
+                Console.WriteLine("Image not found");
         }
 
         public int CalculateGrade(CV cv) {
