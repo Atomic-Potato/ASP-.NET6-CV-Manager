@@ -33,24 +33,23 @@ namespace CV_Manager.Models {
 
         [Required]
         [EmailAddress]
-        [Compare("emailConfirm")]
         [Display(Name = "Email Adddress")]
         public string email { get; set; }
 
-        [Required]
+        // [Required (ErrorMessage = "Please re-type the email address")]
         [EmailAddress]
-        [Compare("email")]
-        [Display(Name = "Confirm Email Address")]
+        [Display(Name = "Re-type the email address")]
+        [Compare("email", ErrorMessage = "Emails do not match!")]
         public string emailConfirm { get; set; }
 
         [Required]
-        [Range(1, 20, ErrorMessage = "Invalid number!")]
-        [Display(Name = "X value")]
+        [Range(1, 20, ErrorMessage = "Number must be between 1 & 20")]
+        [Display(Name = "X value between 1 & 20")]
         public int x { get; set; }
 
         [Required]
-        [Range(20, 50, ErrorMessage = "Invalid number!")]
-        [Display(Name = "Y value")]
+        [Range(20, 50, ErrorMessage = "Number must be between 20 & 50")]
+        [Display(Name = "Y value between 20 & 50")]
         public int y { get; set; }
 
         [Required]
@@ -66,7 +65,7 @@ namespace CV_Manager.Models {
         /// </summary>
         /// <returns>CV containing all the appropriate data from the model</returns>
         public CV ToCV() {
-            string imagePath SaveImage();
+            string imagePath = SaveImage();
 
             return new CV {
                 firstName = this.firstName,

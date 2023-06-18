@@ -10,10 +10,30 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.7",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.7",
-          "MySql.EntityFrameworkCore": "7.0.2"
+          "MySql.EntityFrameworkCore": "7.0.2",
+          "de.lkraemer.nemmet": "1.0.2"
         },
         "runtime": {
           "CV Manager.dll": {}
+        }
+      },
+      "de.lkraemer.nemmet/1.0.2": {
+        "dependencies": {
+          "de.lkraemer.tagbuilder": "1.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/de.lkraemer.nemmet.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "de.lkraemer.tagbuilder/1.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/de.lkraemer.tagbuilder.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
         }
       },
       "Google.Protobuf/3.21.9": {
@@ -535,6 +555,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "de.lkraemer.nemmet/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sKLqzazEX4hC2vymyB+rfxohEsXa4+m2HmnRdp+IN39O/y2NIlFut1s6aoYT4SafK7/Ku6AwNP1XjqWH1bhYyg==",
+      "path": "de.lkraemer.nemmet/1.0.2",
+      "hashPath": "de.lkraemer.nemmet.1.0.2.nupkg.sha512"
+    },
+    "de.lkraemer.tagbuilder/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pFBDZcsW0S6d9z+tyqFn6BbIRHNloLH5U8HbBNmdhNTgEfxHV566MGmTavVXUTgTxdliADn3iEr3EJN8XX9o9A==",
+      "path": "de.lkraemer.tagbuilder/1.0.2",
+      "hashPath": "de.lkraemer.tagbuilder.1.0.2.nupkg.sha512"
     },
     "Google.Protobuf/3.21.9": {
       "type": "package",

@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.error {
+    color: red;
+    font-size: small;
+    font-style: italic;
+}

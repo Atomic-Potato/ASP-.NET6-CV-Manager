@@ -74,3 +74,5 @@ C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manage
 C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\obj\Debug\net6.0\CV Manager.csproj.CopyComplete
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\de.lkraemer.nemmet.dll
+C:\GitHub Repositories\- ASP.NET Core Repositories\CV Manager\ASP-.NET-CV-Manager\CV Manager\bin\Debug\net6.0\de.lkraemer.tagbuilder.dll

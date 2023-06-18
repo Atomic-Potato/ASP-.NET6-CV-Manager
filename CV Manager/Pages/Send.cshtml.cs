@@ -21,6 +21,9 @@ namespace CV_Manager.Pages
         }
 
         public async Task<IActionResult> OnPost() {
+            if (!ModelState.IsValid)
+                return Page();
+
             try {
                 int cvId = await service.CreateCV(cv);
                 return RedirectToPage("Summary", new { id = cvId});

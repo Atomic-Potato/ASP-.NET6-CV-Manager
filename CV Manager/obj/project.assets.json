@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "de.lkraemer.nemmet/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "de.lkraemer.tagbuilder": "1.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/de.lkraemer.nemmet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/de.lkraemer.nemmet.dll": {}
+        }
+      },
+      "de.lkraemer.tagbuilder/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/de.lkraemer.tagbuilder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/de.lkraemer.tagbuilder.dll": {}
+        }
+      },
       "Google.Protobuf/3.21.9": {
         "type": "package",
         "compile": {
@@ -859,6 +880,32 @@
     }
   },
   "libraries": {
+    "de.lkraemer.nemmet/1.0.2": {
+      "sha512": "sKLqzazEX4hC2vymyB+rfxohEsXa4+m2HmnRdp+IN39O/y2NIlFut1s6aoYT4SafK7/Ku6AwNP1XjqWH1bhYyg==",
+      "type": "package",
+      "path": "de.lkraemer.nemmet/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "de.lkraemer.nemmet.1.0.2.nupkg.sha512",
+        "de.lkraemer.nemmet.nuspec",
+        "lib/netstandard2.0/de.lkraemer.nemmet.dll"
+      ]
+    },
+    "de.lkraemer.tagbuilder/1.0.2": {
+      "sha512": "pFBDZcsW0S6d9z+tyqFn6BbIRHNloLH5U8HbBNmdhNTgEfxHV566MGmTavVXUTgTxdliADn3iEr3EJN8XX9o9A==",
+      "type": "package",
+      "path": "de.lkraemer.tagbuilder/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "de.lkraemer.tagbuilder.1.0.2.nupkg.sha512",
+        "de.lkraemer.tagbuilder.nuspec",
+        "lib/netstandard2.0/de.lkraemer.tagbuilder.dll"
+      ]
+    },
     "Google.Protobuf/3.21.9": {
       "sha512": "OTpFujTgkmqMLbg3KT7F/iuKi1rg6s5FCS2M9XcVLDn40zL8wgXm37CY/F6MeOEXKjdcnXGCN/h7oyMkVydVsg==",
       "type": "package",
@@ -2537,7 +2584,8 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.7",
-      "MySql.EntityFrameworkCore >= 7.0.2"
+      "MySql.EntityFrameworkCore >= 7.0.2",
+      "de.lkraemer.nemmet >= 1.0.2"
     ]
   },
   "packageFolders": {
@@ -2593,6 +2641,10 @@
           "MySql.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.2, )"
+          },
+          "de.lkraemer.nemmet": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           }
         },
         "imports": [

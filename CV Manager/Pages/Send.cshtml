@@ -6,23 +6,33 @@
 
 <form asp-page="Summary" method="post" enctype="multipart/form-data">
     <label asp-for="cv.firstName"></label><br>
-    <input asp-for="cv.firstName"><br><br>
+    <input asp-for="cv.firstName"> <br>
+    <span asp-validation-for="cv.firstName" class="error"></span>
+    <br><br>
 
     <label asp-for="cv.lastName"></label><br>
-    <input asp-for="cv.lastName"><br><br>
+    <input asp-for="cv.lastName"><br>
+    <span asp-validation-for="cv.lastName" class="error"></span>
+    <br><br>
 
     <label asp-for="cv.birthDay"></label><br>
-    <input asp-for="cv.birthDay"><br><br>
-    
+    <input asp-for="cv.birthDay"> <br>
+    <span asp-validation-for="cv.birthDay" class="error"></span>
+    <br><br>
+
     <label asp-for="cv.nationality"></label><br>
-    <select asp-for="cv.nationality" asp-items="CVLists.nationalities"></select><br><br>
-    
+    <select asp-for="cv.nationality" asp-items="CVLists.nationalities"></select> <br>
+    <span asp-validation-for="cv.nationality" class="error"></span>
+    <br><br>
+
     <label asp-for="cv.gender"></label><br>
     @{
         foreach(var gender in CVLists.genders) {
             <input type="radio" asp-for="cv.gender" value="@gender.Value"/> @gender.Text<br>
         }
     }
+    <br>
+    <span asp-validation-for="cv.gender" class="error"></span>
     <br><br>
 
     <label asp-for="cv.selectedSkills"></label><br>
@@ -31,27 +41,43 @@
             <input type="checkbox" name="selectedSkills" value="@skill.Value" /> @skill.Text<br>
         }
     }
+    <br>
+    <span asp-validation-for="cv.selectedSkills" class="error"></span>
     <br><br>
 
 
     <label asp-for="cv.email"></label><br>
-    <input asp-for="cv.email" /><br><br>
+    <input asp-for="cv.email" /> <br>
+    <span asp-validation-for="cv.email" class="error"></span>
+    <br>
 
     <label asp-for="cv.emailConfirm"></label><br>
-    <input asp-for="cv.email" /><br><br> <br><br>
+    <input asp-for="cv.emailConfirm" /> <br>
+    <span asp-validation-for="cv.emailConfirm" class="error"></span>
+    <br><br> <br><br>
 
     <label asp-for="cv.x"></label><br>
-    <input asp-for="cv.x" /><br><br>
+    <input asp-for="cv.x" /> <br>
+    <span asp-validation-for="cv.x" class="error"></span>
+    <br><br>
 
     <label asp-for="cv.y"></label><br>
-    <input asp-for="cv.y" /><br><br>
+    <input asp-for="cv.y" /> <br>
+    <span asp-validation-for="cv.y" class="error"></span>
+    <br><br>
 
     <label asp-for="cv.sum"></label><br>
-    <input asp-for="cv.sum" /><br><br> <br><br>
+    <input asp-for="cv.sum" /> <br>
+    <span asp-validation-for="cv.sum" class="error"></span>
+    <br><br> <br><br>
 
     <label asp-for="cv.photo"></label><br>
-    <input asp-for="cv.photo" /><br><br> <br><br>
+    <input asp-for="cv.photo" /> <br>
+    <span asp-validation-for="cv.photo" class="error"></span>
+    <br><br> <br><br>
 
 
     <input type="submit" value="Submit">
+
+    <div asp-validation-summary="All" class="error"></div>
 </form>

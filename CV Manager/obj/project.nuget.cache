@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+Lm1mmb2+OCe8lqUjis3DlOil7veU/PACbu5JY8yuNspwnZam1VWn16vaV/WNxMREJZglGSOm1iPdh8JVs2YeQ==",
+  "dgSpecHash": "MAXEFcP2nEPp9Ijf/DDTLylKQRh+SYIK4H2FzYHQpI+8tRAVOwUgUMOBToj+bxcxXqmk25n+iFZGVYEXkW2pzQ==",
   "success": true,
   "projectFilePath": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\CV Manager.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Atomic Lenowo\\.nuget\\packages\\de.lkraemer.nemmet\\1.0.2\\de.lkraemer.nemmet.1.0.2.nupkg.sha512",
+    "C:\\Users\\Atomic Lenowo\\.nuget\\packages\\de.lkraemer.tagbuilder\\1.0.2\\de.lkraemer.tagbuilder.1.0.2.nupkg.sha512",
     "C:\\Users\\Atomic Lenowo\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\Atomic Lenowo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Atomic Lenowo\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
