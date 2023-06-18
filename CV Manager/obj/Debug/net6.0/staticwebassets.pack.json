@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\CV Manager.bundle.scp.css"
     },
     {
+      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\97e4ab0b-14da-4678-b176-93b5bd461a07_sr2e8e19d5cab83.png",
+      "PackagePath": "staticwebassets\\CVImages\\97e4ab0b-14da-4678-b176-93b5bd461a07_sr2e8e19d5cab83.png"
+    },
+    {
+      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\f74637e6-9d9f-499d-8af4-2e1aea4ee03e_sr2226760bd301d.png",
+      "PackagePath": "staticwebassets\\CVImages\\f74637e6-9d9f-499d-8af4-2e1aea4ee03e_sr2226760bd301d.png"
+    },
+    {
       "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uepws/rGxU8qSrOrfr/wbBSnTa+nafcPxbTWwghjRwc=",
+  "Hash": "pCd27QZ9wyVoCxxKMc+fDRHuIYwlufXPsXZv3dPm6hs=",
   "Source": "CV Manager",
   "BasePath": "_content/CV Manager",
   "Mode": "Default",
@@ -66,6 +66,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\97e4ab0b-14da-4678-b176-93b5bd461a07_sr2e8e19d5cab83.png",
+      "SourceId": "CV Manager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\",
+      "BasePath": "_content/CV Manager",
+      "RelativePath": "CVImages/97e4ab0b-14da-4678-b176-93b5bd461a07_sr2e8e19d5cab83.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CVImages\\97e4ab0b-14da-4678-b176-93b5bd461a07_sr2e8e19d5cab83.png"
+    },
+    {
+      "Identity": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\f74637e6-9d9f-499d-8af4-2e1aea4ee03e_sr2226760bd301d.png",
+      "SourceId": "CV Manager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\",
+      "BasePath": "_content/CV Manager",
+      "RelativePath": "CVImages/f74637e6-9d9f-499d-8af4-2e1aea4ee03e_sr2226760bd301d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CVImages\\f74637e6-9d9f-499d-8af4-2e1aea4ee03e_sr2226760bd301d.png"
     },
     {
       "Identity": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\favicon.ico",

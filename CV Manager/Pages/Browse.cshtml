@@ -2,3 +2,55 @@
 @model CV_Manager.Pages.BrowseModel
 @{
 }
+
+@{
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Grade</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach(CV cv in Model.cvs) {
+            <tr>
+                <td>@cv.firstName</td>
+                <td>@cv.lastName</td>
+                <td>@cv.email</td>
+                <td>@cv.gender</td>
+                <td>TODO: Add the grade to the database</td>
+                <td>
+                    <div class="form_container">
+                    <form id="details-@cv.cvId" asp-page="Summary" method="post">
+                        <input type="hidden" name="form" value="details-@cv.cvId">
+                        <input type="hidden" name="cvId" value="@cv.cvId">
+                        <a href="#" onclick="document.getElementById('details-@cv.cvId').submit()">Details</a>
+                    </form>
+                    </div>
+                    |
+                    <div class="form_container">
+                    <form id="edit-@cv.cvId" asp-page="Edit" method="post">
+                        <input type="hidden" name="form" value="edit-@cv.cvId">
+                        <input type="hidden" name="cvId" value="@cv.cvId">
+                        <a href="#" onclick="document.getElementById('edit-@cv.cvId').submit()">Edit</a>
+                    </form>
+                    </div>
+                    |
+                    <div class="form_container">
+                    <form id="delete-@cv.cvId" asp-page="Delete" method="post">
+                        <input type="hidden" name="form" value="delete-@cv.cvId">
+                        <input type="hidden" name="cvId" value="@cv.cvId">
+                        <a href="#" onclick="document.getElementById('delete-@cv.cvId').submit()">Delete</a>
+                    </form>
+                    </div>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+}
