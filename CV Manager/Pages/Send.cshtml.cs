@@ -21,7 +21,7 @@ namespace CV_Manager.Pages
         }
 
         public async Task<IActionResult> OnPost() {
-            if (!ModelState.IsValid)
+            if (!ValidateForm(cv))
                 return Page();
 
             try {
@@ -30,8 +30,37 @@ namespace CV_Manager.Pages
             }
             catch (Exception ex) {
                 Console.WriteLine("CV could not be added to the databse");
-                throw;
+                throw; 
             }
+        }
+
+        /// <summary>
+        /// Checks if the form provided is valid
+        /// </summary>
+        /// <param name="input">The input binding model</param>
+        /// <returns>true if the form is valid, and false otherwise</returns>
+        bool ValidateForm(CVModel input) {
+            if (!ModelState.IsValid)
+                return false;
+
+            if (!ValidateSum(cv)) {
+                ModelState.AddModelError("cv.sum", "The sum of X & Y is incorrect!");
+                return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Checks if the summation provided by the user is correct
+        /// </summary>
+        /// <param name="input">The input binding model</param>
+        /// <returns>true if the sum is correct, and false otherwise</returns>
+        bool ValidateSum(CVModel input) {
+            if(input == null)
+                return false;
+
+            return input.x + input.y == input.sum;
         }
     }
 }
