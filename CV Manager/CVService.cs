@@ -66,7 +66,7 @@
         /// <param name="id">The CV id to be modified</param>
         /// <returns>The modified CV id</returns>
         public async Task<int> EditCV(int id, CV updated) {
-            var cv = await db.CVs.FindAsync(id);
+            CV cv = await db.CVs.FindAsync(id);
 
             if (cv == null)
                 throw new Exception("CV could not be found");
@@ -75,6 +75,8 @@
             UpdateInfo();
             await db.SaveChangesAsync();
             
+            return cv.cvId;
+
             void UpdateInfo() {
                 cv.firstName = updated.firstName;
                 cv.lastName = updated.lastName;

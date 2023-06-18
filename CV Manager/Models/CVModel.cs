@@ -92,6 +92,26 @@ namespace CV_Manager.Models {
         }
 
         /// <summary>
+        /// Creates a CV model from a CV entity
+        /// </summary>
+        /// <param name="cv">CV entity</param>
+        /// <returns>CVModel</returns>
+        public static CVModel ToCVModel(CV cv) {
+            return new CVModel { 
+                firstName = cv.firstName,
+                lastName = cv.lastName,
+                birthDay = cv.birthDay,
+                nationality = cv.nationality,
+                gender = cv.gender,
+                java = cv.java,
+                cs = cv.cs,
+                python = cv.python,
+                beef = cv.beef,
+                email = cv.email,
+            };
+        }
+
+        /// <summary>
         /// Saves the submitted image to the following path:
         /// wwwroot/CVImages
         /// </summary>
@@ -108,5 +128,7 @@ namespace CV_Manager.Models {
 
             return filePath;
         }
+
+
     }
 }
