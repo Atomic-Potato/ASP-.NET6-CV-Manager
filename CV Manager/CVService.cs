@@ -36,5 +36,25 @@
                 })
                 .SingleOrDefaultAsync();
         }
+
+        public int CalculateGrade(CV cv) {
+            if (cv == null)
+                return 0;
+
+            int grade = 0;
+
+            if (cv.java)
+                grade += 10;
+            if (cv.cs)
+                grade += 10;
+            if (cv.python) 
+                grade += 10;
+            if (cv.beef)
+                grade += 10;
+
+            grade = cv.gender.Equals("Male") ? grade + 5 : grade + 10;
+        
+            return grade;
+        }
     }
 }

@@ -5,34 +5,6 @@
       "PackagePath": "staticwebassets\\CV Manager.bundle.scp.css"
     },
     {
-      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\0abcffe9-3eb2-4bb9-bf09-9cc1eac1f64a_sr2f3c47ede67ea.png",
-      "PackagePath": "staticwebassets\\CVImages\\0abcffe9-3eb2-4bb9-bf09-9cc1eac1f64a_sr2f3c47ede67ea.png"
-    },
-    {
-      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\1fd0b035-a76b-4bc0-b1a6-6a7643a96195_sr2f3c47ede67ea.png",
-      "PackagePath": "staticwebassets\\CVImages\\1fd0b035-a76b-4bc0-b1a6-6a7643a96195_sr2f3c47ede67ea.png"
-    },
-    {
-      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\30f2da46-3a5e-4305-b3a0-a7a4d1ad0af0_72249823_p0.jpg",
-      "PackagePath": "staticwebassets\\CVImages\\30f2da46-3a5e-4305-b3a0-a7a4d1ad0af0_72249823_p0.jpg"
-    },
-    {
-      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\8b731951-bc45-41f9-8d68-e56fbcce55f9_sr2f3c47ede67ea.png",
-      "PackagePath": "staticwebassets\\CVImages\\8b731951-bc45-41f9-8d68-e56fbcce55f9_sr2f3c47ede67ea.png"
-    },
-    {
-      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\98eb56b6-b549-4c02-9b9a-c8f641ffd356_sr2226760bd301d.png",
-      "PackagePath": "staticwebassets\\CVImages\\98eb56b6-b549-4c02-9b9a-c8f641ffd356_sr2226760bd301d.png"
-    },
-    {
-      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\cd613814-8e49-473a-a0f1-4807c9109529_sr2f3c47ede67ea.png",
-      "PackagePath": "staticwebassets\\CVImages\\cd613814-8e49-473a-a0f1-4807c9109529_sr2f3c47ede67ea.png"
-    },
-    {
-      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\cde7936f-6fe0-401f-a31e-e98b545f08e3_sr2226760bd301d.png",
-      "PackagePath": "staticwebassets\\CVImages\\cde7936f-6fe0-401f-a31e-e98b545f08e3_sr2226760bd301d.png"
-    },
-    {
       "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
