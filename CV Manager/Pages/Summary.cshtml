@@ -1,6 +1,33 @@
 ﻿@page "{id}"
 @model CV_Manager.Pages.SummaryModel
 @{
+    CV cv = Model.cv;
 }
 
-<img src="@Model.cv.photo" asp-append-version="true" alt="CV Profile Picture" class="cv_profile_img">
+<img src="@cv.photo" asp-append-version="true" alt="CV Profile Picture" class="cv_profile_img">
+
+<h3>
+    @cv.firstName @cv.lastName <br>
+    <p style="font-size:small; font-style:italic">
+        @cv.gender born in @cv.nationality on @cv.birthDay <br />
+        Email: @cv.email
+    </p>
+</h3>
+
+<h4>Skills</h4>
+<ul>
+    @{
+        if (cv.java) {
+            <li>Java</li>
+        }
+        if (cv.cs) {
+            <li>C#</li>
+        }
+        if (cv.python) {
+            <li>Python</li>
+        }
+        if (cv.beef) {
+            <li>Beef</li>
+        }
+    }
+</ul>
