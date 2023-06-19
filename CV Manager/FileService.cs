@@ -1,4 +1,5 @@
-﻿namespace CV_Manager {
+﻿
+namespace CV_Manager {
     public class FileService {
 
         /// <summary>
@@ -29,5 +30,7 @@
                 throw new Exception("Image not found");
             }
         }
+
+
     }
 }
