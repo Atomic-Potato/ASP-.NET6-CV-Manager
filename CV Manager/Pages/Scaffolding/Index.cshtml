@@ -24,6 +24,13 @@
                 @Html.DisplayFor(modelItem => item.grade)
             </td>
             <td>
+                <div class="form_container">
+                    <form id="download-@item.cvId" asp-page="./Index" method="post">
+                        <input type="hidden" name="form" value="download-@item.cvId">
+                        <input type="hidden" name="cvId" value="@item.cvId">
+                        <a href="#" onclick="document.getElementById('download-@item.cvId').submit()">Download</a>
+                    </form>
+                </div>
                 <a asp-page="" asp-route-id="@item.cvId">Download</a> |
                 <a asp-page="../Edit" asp-route-id="@item.cvId">Edit</a> |
                 <a asp-page="./Delete" asp-route-id="@item.cvId">Delete</a>
