@@ -42,6 +42,9 @@ namespace CV_Manager {
             
             // A memory stream to write the PDF content
             MemoryStream stream = new MemoryStream();
+            // A PDF writer to write the document to the stream
+            PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+
 
             pdfDoc.Open();
             FillDocument();
@@ -53,8 +56,10 @@ namespace CV_Manager {
                 Image image = Image.GetInstance("wwwroot/CVImages/" + cv.photo);
                 image.ScaleToFit(new Rectangle(0, 0, 200, 200));
 
-                Font nameFont = new Font(Font.FontFamily.HELVETICA, 20f, Font.BOLD);
-                Paragraph name = new Paragraph(cv.firstName + " " + cv.lastName, nameFont);
+                Font title = new Font(Font.FontFamily.HELVETICA, 20f, Font.BOLD);
+                Paragraph name = new Paragraph(cv.firstName + " " + cv.lastName, title);
+
+                Paragraph skillsTitle = new Paragraph("Skills", title);
 
                 Font gradeFont = new Font(Font.FontFamily.HELVETICA, 30f, Font.BOLD);
                 Paragraph grade = new Paragraph("Grade: " + cv.grade, gradeFont);
@@ -76,6 +81,7 @@ namespace CV_Manager {
                 pdfDoc.Add(image);
                 pdfDoc.Add(name);
                 pdfDoc.Add(desc);
+                pdfDoc.Add(skillsTitle);
                 pdfDoc.Add(skills);
                 pdfDoc.Add(grade);
             }
