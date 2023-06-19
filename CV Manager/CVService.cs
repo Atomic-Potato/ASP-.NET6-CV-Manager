@@ -93,6 +93,15 @@ namespace CV_Manager {
             }
         }
 
+        public async Task DeleteCV(int id) {
+            CV cv = await db.CVs.FindAsync(id);
+
+            DeleteImage("wwwroot/CVImages/" + cv.photo);
+
+            db.Remove(cv);
+            await db.SaveChangesAsync();
+        }
+
         void DeleteImage(string path) {
             if (File.Exists(path))
                 File.Delete(path);

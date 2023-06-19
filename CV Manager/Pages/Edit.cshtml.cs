@@ -41,7 +41,7 @@ namespace CV_Manager.Pages
                     int cvId = await service.EditCV(id, cv.ToCV());
                     return RedirectToPage("Summary", new { id = cvId });
                 }
-                catch (Exception ex) {
+                catch (Exception) {
                     Console.WriteLine("CV could not be updated");
                     throw;
                 }

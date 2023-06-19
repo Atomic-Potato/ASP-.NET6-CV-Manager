@@ -18,13 +18,15 @@ namespace CV_Manager.Pages
             cvs = await service.LoadAllCVs();
         }
 
-        public IActionResult OnPost(string form, int cvId) {
+        public async Task<IActionResult> OnPost(string form, int cvId) {
             if (form.StartsWith("details-"))
                 return RedirectToPage("Summary", new { id = cvId });
             if (form.StartsWith("edit-"))
                 return RedirectToPage("Edit", new { id = cvId });
-            if (form.StartsWith("delete-"))
-                return RedirectToPage("Delete", new { id = cvId });
+            if (form.StartsWith("delete-")) {
+                await service.DeleteCV(cvId);
+                return Page();
+            }
 
             return Page();
         }

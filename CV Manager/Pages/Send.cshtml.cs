@@ -28,9 +28,8 @@ namespace CV_Manager.Pages
                 int cvId = await service.CreateCV(cv);
                 return RedirectToPage("Summary", new { id = cvId});
             }
-            catch (Exception ex) {
-                Console.WriteLine("CV could not be added to the databse");
-                throw; 
+            catch (Exception) {
+                throw new Exception("CV could not be added to the databse");
             }
         }
 
