@@ -17,15 +17,5 @@ namespace CV_Manager.Data {
             new SelectListItem{Value = "Attack Helicopter", Text = "Attack Helicopter"},
             new SelectListItem{Value = "unkown gender", Text = "Other"}
         };
-
-
-        public static IEnumerable<CheckModel> GetSkills() {
-            return new List<CheckModel>() {
-                new CheckModel(false, "C#"),
-                new CheckModel(false, "Java"),
-                new CheckModel(false, "Python"),
-                new CheckModel(false, "Beef"),
-            };
-        }
     }
 }
