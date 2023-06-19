@@ -24,8 +24,7 @@ namespace CV_Manager.Pages
             if (form.StartsWith("edit-"))
                 return RedirectToPage("Edit", new { id = cvId });
             if (form.StartsWith("delete-")) {
-                await service.DeleteCV(cvId);
-                return Page();
+                return RedirectToPage("./Scaffolding/Delete", new { id = cvId });
             }
 
             return Page();
