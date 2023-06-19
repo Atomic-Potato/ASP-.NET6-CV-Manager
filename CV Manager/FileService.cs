@@ -1,4 +1,7 @@
-﻿
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+
 namespace CV_Manager {
     public class FileService {
 
@@ -31,6 +34,40 @@ namespace CV_Manager {
             }
         }
 
+        public byte[] ConvertToPDF(CV cv) {
+            Document pdfDoc = new Document();
+            
+            // A memory stream to write the PDF content
+            MemoryStream stream = new MemoryStream();
+            // A PDF writer to write the document to the stream
+            PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
 
+            pdfDoc.Open();
+            FillDocument();
+            pdfDoc.Close();
+
+            return stream.ToArray();
+
+            void FillDocument() {
+                pdfDoc.Add(Image.GetInstance("wwwroot/CVImages/" + cv.photo));
+                pdfDoc.Add(new Header("Full Name", cv.firstName + " " + cv.lastName));
+                pdfDoc.Add(new Paragraph(
+                    cv.gender + " born in " + cv.nationality + " on " + cv.birthDay + "\n"
+                    + "Email: " + @cv.email));
+
+                List skills = new List(List.UNORDERED);
+                if (cv.java)
+                    skills.Add("Java");
+                if (cv.cs)
+                    skills.Add("C#");
+                if (cv.python)
+                    skills.Add("Python");
+                if (cv.beef)
+                    skills.Add("Beef");
+                pdfDoc.Add(skills);
+
+                pdfDoc.Add(new Header("Grade", "Grade: " + cv.grade));
+            }
+        }
     }
 }
