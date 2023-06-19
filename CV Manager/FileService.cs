@@ -34,13 +34,14 @@ namespace CV_Manager {
             }
         }
 
+        /// <summary>
+        /// Converts a CV record into a PDF file
+        /// </summary>
         public byte[] ConvertToPDF(CV cv) {
             Document pdfDoc = new Document();
             
             // A memory stream to write the PDF content
             MemoryStream stream = new MemoryStream();
-            // A PDF writer to write the document to the stream
-            PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
 
             pdfDoc.Open();
             FillDocument();
