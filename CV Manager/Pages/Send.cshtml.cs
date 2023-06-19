@@ -23,8 +23,9 @@ namespace CV_Manager.Pages
         public async Task<IActionResult> OnPost() {
             if (!ValidateForm(cv))
                 return Page();
-
+            
             try {
+                service.CalculateGrade(cv);
                 int cvId = await service.CreateCV(cv);
                 return RedirectToPage("Summary", new { id = cvId});
             }

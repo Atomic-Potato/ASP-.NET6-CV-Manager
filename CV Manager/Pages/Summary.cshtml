@@ -12,10 +12,10 @@
 
 <h3>
     @cv.firstName @cv.lastName <br>
-    <p style="font-size:small; font-style:italic">
+    <span style="font-size:small; font-style:italic">
         @cv.gender born in @cv.nationality on @cv.birthDay <br />
         Email: @cv.email
-    </p>
+    </span>
 </h3>
 
 <h4>Skills</h4>
@@ -36,4 +36,4 @@
     }
 </ul>
 
-<h2>Grade: @Model.grade</h2>
+<h2>Grade: @cv.grade</h2>

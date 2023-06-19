@@ -33,7 +33,8 @@ namespace CV_Manager {
                     python = r.python,
                     beef = r.beef,
                     email = r.email,
-                    photo = r.photo
+                    photo = r.photo,
+                    grade = r.grade,
                 })
                 .SingleOrDefaultAsync();
         }
@@ -56,7 +57,8 @@ namespace CV_Manager {
                     python = r.python,
                     beef = r.beef,
                     email = r.email,
-                    photo = r.photo
+                    photo = r.photo,
+                    grade = r.grade,
                 })
                 .ToListAsync();
         }
@@ -128,6 +130,26 @@ namespace CV_Manager {
             grade = cv.gender.Equals("Male") ? grade + 5 : grade + 10;
         
             return grade;
+        }
+
+        public void CalculateGrade(CVModel cv) {
+            if (cv == null)
+                throw new Exception("CV does not exist!");
+
+            int grade = 0;
+
+            if (cv.java)
+                grade += 10;
+            if (cv.cs)
+                grade += 10;
+            if (cv.python)
+                grade += 10;
+            if (cv.beef)
+                grade += 10;
+
+            grade = cv.gender.Equals("Male") ? grade + 5 : grade + 10;
+
+            cv.grade = grade;
         }
     }
 }

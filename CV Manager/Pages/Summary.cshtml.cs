@@ -8,8 +8,6 @@ namespace CV_Manager.Pages
     {
         [BindProperty]
         public CV cv { get; set; }
-        [BindProperty]
-        public int grade { get; set; }
 
         CVService service;
 
@@ -19,7 +17,6 @@ namespace CV_Manager.Pages
 
         public async Task OnGet(int id){
             cv = await service.GetCV(id);
-            grade = service.CalculateGrade(cv);
         }
     }
 }

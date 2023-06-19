@@ -2,6 +2,7 @@
 
 namespace CV_Manager.Models {
     public class CVModel {
+        #region GENEARL INFORMATION
         [Required]
         [Display(Name = "First Name")]
         [StringLength(100, ErrorMessage = "Maximum length is 100")]
@@ -27,6 +28,7 @@ namespace CV_Manager.Models {
         [Required]
         [Display(Name = "Gender")]
         public string gender { get; set; }
+        #endregion
 
         #region SKILLS
         [Display(Name = "Java")]
@@ -39,6 +41,7 @@ namespace CV_Manager.Models {
         public bool beef { get; set; }
         #endregion
 
+        #region EMAIL
         [Required]
         [EmailAddress]
         [Display(Name = "Email Adddress")]
@@ -48,7 +51,9 @@ namespace CV_Manager.Models {
         [Display(Name = "Re-type the email address")]
         [Compare("email", ErrorMessage = "Emails do not match!")]
         public string emailConfirm { get; set; }
+        #endregion
 
+        #region VALIDATION
         [Required]
         [Range(1, 20, ErrorMessage = "Number must be between 1 & 20")]
         [Display(Name = "X value between 1 & 20")]
@@ -62,10 +67,16 @@ namespace CV_Manager.Models {
         [Required]
         [Display(Name = "Sum of X & Y")]
         public int sum { get; set; }
+        #endregion
 
+        #region OTHER INFORMATION
         [Required]
         [Display(Name = "Photus")]
         public IFormFile photo { get; set; }
+        
+        public int grade { get; set; }
+        #endregion
+
 
         /// <summary>
         /// Coverts the model into a CV record
@@ -87,7 +98,9 @@ namespace CV_Manager.Models {
                 beef = this.beef,
 
                 email = this.email,
-                photo = imagePath
+                photo = imagePath,
+
+                grade = this.grade,
             };
         }
 
@@ -108,6 +121,7 @@ namespace CV_Manager.Models {
                 python = cv.python,
                 beef = cv.beef,
                 email = cv.email,
+                grade = cv.grade,
             };
         }
 

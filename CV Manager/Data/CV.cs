@@ -18,5 +18,7 @@ namespace CV_Manager.Data {
 
         public string email { get; set; }
         public string photo { get; set; }
+
+        public int grade { get; set; }
     }
 }

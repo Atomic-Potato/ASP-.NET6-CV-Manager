@@ -16,7 +16,6 @@
                 <th>Email</th>
                 <th>Gender</th>
                 <th>Grade</th>
-                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -26,7 +25,7 @@
                 <td>@cv.lastName</td>
                 <td>@cv.email</td>
                 <td>@cv.gender</td>
-                <td>TODO: Add the grade to the database</td>
+                <td>@cv.grade</td>
                 <td>
                     <div class="form_container">
                     <form id="details-@cv.cvId" asp-page="Summary" method="post">

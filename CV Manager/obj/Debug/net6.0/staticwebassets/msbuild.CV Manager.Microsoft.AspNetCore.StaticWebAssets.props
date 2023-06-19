@@ -32,12 +32,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CV Manager.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\33a51494-04f6-4e6f-8cbf-77ced40fd365_sr2226760bd301d.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\0b92585d-cdd8-4f3f-8d40-d09bcd00ff66_d57zdb3-96607509-7a52-45cd-8e5f-770eba3622f5.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>CV Manager</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/CV Manager</BasePath>
-      <RelativePath>CVImages/33a51494-04f6-4e6f-8cbf-77ced40fd365_sr2226760bd301d.png</RelativePath>
+      <RelativePath>CVImages/0b92585d-cdd8-4f3f-8d40-d09bcd00ff66_d57zdb3-96607509-7a52-45cd-8e5f-770eba3622f5.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -46,7 +46,87 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\33a51494-04f6-4e6f-8cbf-77ced40fd365_sr2226760bd301d.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\0b92585d-cdd8-4f3f-8d40-d09bcd00ff66_d57zdb3-96607509-7a52-45cd-8e5f-770eba3622f5.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\45db2df8-b0a6-4569-bae2-892671a5f951_sr2e8e19d5cab83.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CV Manager</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CV Manager</BasePath>
+      <RelativePath>CVImages/45db2df8-b0a6-4569-bae2-892671a5f951_sr2e8e19d5cab83.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\45db2df8-b0a6-4569-bae2-892671a5f951_sr2e8e19d5cab83.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\72257f93-a25b-4d52-970e-5791b19e9f28_72249823_p0.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>CV Manager</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CV Manager</BasePath>
+      <RelativePath>CVImages/72257f93-a25b-4d52-970e-5791b19e9f28_72249823_p0.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\72257f93-a25b-4d52-970e-5791b19e9f28_72249823_p0.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\9fadf307-8043-4f99-8e39-6665f50853b6_72249823_p0.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>CV Manager</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CV Manager</BasePath>
+      <RelativePath>CVImages/9fadf307-8043-4f99-8e39-6665f50853b6_72249823_p0.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\9fadf307-8043-4f99-8e39-6665f50853b6_72249823_p0.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\bce0886a-d15e-4450-ae4b-ac7a9165a33f_sr2f3c47ede67ea.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CV Manager</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CV Manager</BasePath>
+      <RelativePath>CVImages/bce0886a-d15e-4450-ae4b-ac7a9165a33f_sr2f3c47ede67ea.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\bce0886a-d15e-4450-ae4b-ac7a9165a33f_sr2f3c47ede67ea.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\c830b67f-94d4-4343-a0c2-f0aaade2ad2a_sr2ece1ff5c5288.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CV Manager</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CV Manager</BasePath>
+      <RelativePath>CVImages/c830b67f-94d4-4343-a0c2-f0aaade2ad2a_sr2ece1ff5c5288.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\CVImages\c830b67f-94d4-4343-a0c2-f0aaade2ad2a_sr2ece1ff5c5288.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))">
       <SourceType>Package</SourceType>
