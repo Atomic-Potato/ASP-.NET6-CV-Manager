@@ -1,4 +1,5 @@
-﻿namespace CV_Manager {
+﻿using System.Web;
+namespace CV_Manager {
     public class CVService {
         AppDbContext db;
         public CVService(AppDbContext context) {
@@ -71,7 +72,7 @@
             if (cv == null)
                 throw new Exception("CV could not be found");
 
-            DeleteImage(cv.photo);
+            DeleteImage("wwwroot/CVImages/" + cv.photo);
             UpdateInfo();
             await db.SaveChangesAsync();
             
@@ -93,10 +94,11 @@
         }
 
         void DeleteImage(string path) {
-            if (System.IO.File.Exists(path))
-                System.IO.File.Delete(path);
-            else
-                Console.WriteLine("Image not found");
+            if (File.Exists(path))
+                File.Delete(path);
+            else {
+                throw new Exception("Image not found");
+            }
         }
 
         public int CalculateGrade(CV cv) {

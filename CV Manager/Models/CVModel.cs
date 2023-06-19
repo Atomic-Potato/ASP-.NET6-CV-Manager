@@ -115,18 +115,16 @@ namespace CV_Manager.Models {
         /// Saves the submitted image to the following path:
         /// wwwroot/CVImages
         /// </summary>
-        /// <returns>The new image path</returns>
+        /// <returns>The new unique image name</returns>
         string SaveImage() {
-            string folderPath = "wwwroot/CVImages";
             string fileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
-            string savePath = folderPath + "/" + fileName;
-            string filePath = "~/CVImages/" + fileName;
+            string savePath = "wwwroot/CVImages/" + fileName;
 
             using (var fileStream = new FileStream(savePath, FileMode.Create)) {
                 photo.CopyTo(fileStream);
             }
 
-            return filePath;
+            return fileName;
         }
 
 
