@@ -73,18 +73,17 @@ namespace CV_Manager.Models {
         [Required]
         [Display(Name = "Photus")]
         public IFormFile photo { get; set; }
+
+        public string imagePath { get; set; }
         
         public int grade { get; set; }
         #endregion
-
 
         /// <summary>
         /// Coverts the model into a CV record
         /// </summary>
         /// <returns>CV containing all the appropriate data from the model</returns>
         public CV ToCV() {
-            string imagePath = SaveImage();
-
             return new CV {
                 firstName = this.firstName,
                 lastName = this.lastName,
@@ -124,23 +123,5 @@ namespace CV_Manager.Models {
                 grade = cv.grade,
             };
         }
-
-        /// <summary>
-        /// Saves the submitted image to the following path:
-        /// wwwroot/CVImages
-        /// </summary>
-        /// <returns>The new unique image name</returns>
-        string SaveImage() {
-            string fileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
-            string savePath = "wwwroot/CVImages/" + fileName;
-
-            using (var fileStream = new FileStream(savePath, FileMode.Create)) {
-                photo.CopyTo(fileStream);
-            }
-
-            return fileName;
-        }
-
-
     }
 }

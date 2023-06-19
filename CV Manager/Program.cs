@@ -7,6 +7,7 @@ var services = builder.Services;
 services.AddRazorPages();
 RegisterDbContext();
 services.AddScoped<CVService>();
+services.AddScoped<FileService>();
 
 var app = builder.Build();
 

@@ -2,8 +2,11 @@
 namespace CV_Manager {
     public class CVService {
         AppDbContext db;
-        public CVService(AppDbContext context) {
+        FileService fileService;
+
+        public CVService(AppDbContext context, FileService fileService) {
             db = context;
+            this.fileService = fileService;
         }
 
         /// <summary>
@@ -74,7 +77,7 @@ namespace CV_Manager {
             if (cv == null)
                 throw new Exception("CV could not be found");
 
-            DeleteImage("wwwroot/CVImages/" + cv.photo);
+            fileService.DeleteImage("wwwroot/CVImages/" + cv.photo);
             UpdateInfo();
             await db.SaveChangesAsync();
             
@@ -98,19 +101,13 @@ namespace CV_Manager {
         public async Task DeleteCV(int id) {
             CV cv = await db.CVs.FindAsync(id);
 
-            DeleteImage("wwwroot/CVImages/" + cv.photo);
+            fileService.DeleteImage("wwwroot/CVImages/" + cv.photo);
 
             db.Remove(cv);
             await db.SaveChangesAsync();
         }
 
-        void DeleteImage(string path) {
-            if (File.Exists(path))
-                File.Delete(path);
-            else {
-                throw new Exception("Image not found");
-            }
-        }
+        
 
         public int CalculateGrade(CV cv) {
             if (cv == null)

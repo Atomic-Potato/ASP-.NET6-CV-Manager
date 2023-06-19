@@ -10,10 +10,12 @@ namespace CV_Manager.Pages
         [BindProperty]
         public CVModel cv {get; set;}
 
-        readonly CVService service;
+        readonly CVService cvService;
+        readonly FileService fileService;
         
-        public SendModel(CVService service) {
-            this.service = service;
+        public SendModel(CVService cvService, FileService fileService) {
+            this.cvService = cvService;
+            this.fileService = fileService;
         }
 
         public void OnGet(){
@@ -25,8 +27,10 @@ namespace CV_Manager.Pages
                 return Page();
             
             try {
-                service.CalculateGrade(cv);
-                int cvId = await service.CreateCV(cv);
+
+                cv.imagePath = fileService.SaveImage(cv.photo);
+                cvService.CalculateGrade(cv);
+                int cvId = await cvService.CreateCV(cv);
                 return RedirectToPage("Summary", new { id = cvId});
             }
             catch (Exception) {
