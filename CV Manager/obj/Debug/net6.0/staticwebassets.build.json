@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9BgmrAkxbn87KmBj/ly/rMdDu/nFXVKOYHqrTMgHowU=",
+  "Hash": "+GYc0/C6B19g8sf/UYyIIfXqT96mbeRZoNp4vsfn3bQ=",
   "Source": "CV Manager",
   "BasePath": "_content/CV Manager",
   "Mode": "Default",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CVImages\\c830b67f-94d4-4343-a0c2-f0aaade2ad2a_sr2ece1ff5c5288.png"
+    },
+    {
+      "Identity": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\CVImages\\dee4a7a3-a4a7-4c86-a5d6-d2e43aa91926_fuu_by_krukmeister_d5i3odt.png",
+      "SourceId": "CV Manager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\",
+      "BasePath": "_content/CV Manager",
+      "RelativePath": "CVImages/dee4a7a3-a4a7-4c86-a5d6-d2e43aa91926_fuu_by_krukmeister_d5i3odt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CVImages\\dee4a7a3-a4a7-4c86-a5d6-d2e43aa91926_fuu_by_krukmeister_d5i3odt.png"
     },
     {
       "Identity": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\favicon.ico",
