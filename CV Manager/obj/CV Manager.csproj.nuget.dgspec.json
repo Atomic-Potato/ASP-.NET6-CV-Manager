@@ -69,9 +69,17 @@
               "target": "Package",
               "version": "[7.0.2, )"
             },
+            "PdfSharp": {
+              "target": "Package",
+              "version": "[1.50.5147, )"
+            },
             "de.lkraemer.nemmet": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
