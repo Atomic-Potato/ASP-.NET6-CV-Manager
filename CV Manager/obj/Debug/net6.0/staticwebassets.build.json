@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HFB8tw4oHtKFtWJZaFz1Kz9FMKmEgdSbXc9ZHYY5K/s=",
+  "Hash": "2lnmYfQkd1MqUlSGhOroGf09KubS7tdQ2mTyK2qZjG0=",
   "Source": "CV Manager",
   "BasePath": "_content/CV Manager",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CV Manager.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\background.png",
+      "SourceId": "CV Manager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\",
+      "BasePath": "_content/CV Manager",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
       "Identity": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\css\\site.css",

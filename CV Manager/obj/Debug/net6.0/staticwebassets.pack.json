@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\CVImages\\dd89d23b-ea1d-4a39-93ac-5e310559b4d8_sr2e8e19d5cab83.png"
     },
     {
+      "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
       "Id": "C:\\GitHub Repositories\\- ASP.NET Core Repositories\\CV Manager\\ASP-.NET-CV-Manager\\CV Manager\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
