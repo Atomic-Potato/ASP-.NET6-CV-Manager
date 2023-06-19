@@ -49,11 +49,18 @@ namespace CV_Manager {
             return stream.ToArray();
 
             void FillDocument() {
-                pdfDoc.Add(Image.GetInstance("wwwroot/CVImages/" + cv.photo));
-                pdfDoc.Add(new Header("Full Name", cv.firstName + " " + cv.lastName));
-                pdfDoc.Add(new Paragraph(
+                Image image = Image.GetInstance("wwwroot/CVImages/" + cv.photo);
+                image.ScaleToFit(new Rectangle(0, 0, 200, 200));
+
+                Font nameFont = new Font(Font.FontFamily.HELVETICA, 20f, Font.BOLD);
+                Paragraph name = new Paragraph(cv.firstName + " " + cv.lastName, nameFont);
+
+                Font gradeFont = new Font(Font.FontFamily.HELVETICA, 30f, Font.BOLD);
+                Paragraph grade = new Paragraph("Grade: " + cv.grade, gradeFont);
+
+                Paragraph desc = new Paragraph(
                     cv.gender + " born in " + cv.nationality + " on " + cv.birthDay + "\n"
-                    + "Email: " + @cv.email));
+                    + "Email: " + @cv.email);
 
                 List skills = new List(List.UNORDERED);
                 if (cv.java)
@@ -64,9 +71,12 @@ namespace CV_Manager {
                     skills.Add("Python");
                 if (cv.beef)
                     skills.Add("Beef");
-                pdfDoc.Add(skills);
 
-                pdfDoc.Add(new Header("Grade", "Grade: " + cv.grade));
+                pdfDoc.Add(image);
+                pdfDoc.Add(name);
+                pdfDoc.Add(desc);
+                pdfDoc.Add(skills);
+                pdfDoc.Add(grade);
             }
         }
     }
